@@ -1,0 +1,277 @@
+{
+  "details": [
+    {
+      "id": "01",
+      "profile_image": "",
+      "face_image": "./images/jhay-face.png",
+      "full_image": "./images/jhay-full.png",
+      "color": "#64120d",   
+      "cv": "",
+      "name": "Romeo Torrijos",
+      "role": "Designer",
+      "bio": "",
+      "completed_projects": "",
+      "customer_satisfaction": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "github": "",
+      "skills": [
+        {
+          "title": "React",
+          "percentage": ""
+        },
+        {
+          "title": "UI/UX Design",
+          "percentage": ""
+        }
+      ],
+      "projects": [
+        {
+          "project_title": "",
+          "type": "website",
+          "link": ""
+        },
+        {
+          "project_title": "",
+          "type": "figma",
+          "link": ""
+        },
+        {
+          "project_title": "",
+          "type": "image",
+          "link": null
+        }
+      ],
+      "work": [
+        {
+          "job_title": "",
+          "employer": "",
+          "task": ["", ""],
+          "start_month": "",
+          "start_year": "",
+          "end_month": "",
+          "end_year": ""
+        }
+      ],
+      "acads": [
+        {
+          "program": "",
+          "school": "",
+          "year_end": "",
+          "academic_achievement": ["", ""],
+          "leadership": ["", ""]
+        }
+      ]
+    },
+    {
+      "id": "02",
+      "profile_image": "",
+      "face_image": "./images/ld-face.png",
+      "full_image": "./images/ld-full.png",
+      "color": "#31751f", 
+      "cv": "",
+      "name": "Louie Dave Ramillo",
+      "role": "Back-end Programmer",
+      "bio": "",
+      "completed_projects": "",
+      "customer_satisfaction": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "github": "",
+      "skills": [
+        {
+          "title": "React",
+          "percentage": ""
+        },
+        {
+          "title": "UI/UX Design",
+          "percentage": ""
+        }
+      ],
+      "projects": [
+        {
+          "project_title": "",
+          "type": "website",
+          "link": ""
+        },
+        {
+          "project_title": "",
+          "type": "figma",
+          "link": ""
+        },
+        {
+          "project_title": "",
+          "type": "image",
+          "link": null
+        }
+      ],
+      "work": [
+        {
+          "job_title": "",
+          "employer": "",
+          "task": ["", ""],
+          "start_month": "",
+          "start_year": "",
+          "end_month": "",
+          "end_year": ""
+        }
+      ],
+      "acads": [
+        {
+          "program": "",
+          "school": "",
+          "year_end": "",
+          "academic_achievement": ["", ""],
+          "leadership": ["", ""]
+        }
+      ]
+    },
+    {
+      "id": "03",
+      "profile_image": "",
+      "face_image": "./images/eli-face.png",
+      "full_image": "./images/eli-full.png",
+      "color": "#003d63",      
+      "cv": "",
+      "name": "Elijah Poblete",
+      "role": "Database Manager",
+      "bio": "",
+      "completed_projects": "",
+      "customer_satisfaction": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "github": "",
+      "skills": [
+        {
+          "title": "React",
+          "percentage": ""
+        },
+        {
+          "title": "UI/UX Design",
+          "percentage": ""
+        }
+      ],
+      "projects": [
+        {
+          "project_title": "",
+          "type": "website",
+          "link": ""
+        },
+        {
+          "project_title": "",
+          "type": "figma",
+          "link": ""
+        },
+        {
+          "project_title": "",
+          "type": "image",
+          "link": null
+        }
+      ],
+      "work": [
+        {
+          "job_title": "",
+          "employer": "",
+          "task": ["", ""],
+          "start_month": "",
+          "start_year": "",
+          "end_month": "",
+          "end_year": ""
+        }
+      ],
+      "acads": [
+        {
+          "program": "",
+          "school": "",
+          "year_end": "",
+          "academic_achievement": ["", ""],
+          "leadership": ["", ""]
+        }
+      ]
+    },
+    {
+      "id": "04",
+      "profile_image": "",
+      "face_image": "./images/albert-face.png",
+      "full_image": "./images/albert-full.png",
+      "color": "#726255", 
+      "cv": "",
+      "name": "Albert Tan",
+      "role": "UI/UX Programmer",
+      "bio": "",
+      "completed_projects": "",
+      "customer_satisfaction": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "github": "",
+      "skills": [
+        {
+          "title": "React",
+          "percentage": ""
+        },
+        {
+          "title": "UI/UX Design",
+          "percentage": ""
+        }
+      ],
+      "projects": [
+        {
+          "project_title": "",
+          "type": "website",
+          "link": ""
+        },
+        {
+          "project_title": "",
+          "type": "figma",
+          "link": ""
+        },
+        {
+          "project_title": "",
+          "type": "image",
+          "link": null
+        }
+      ],
+      "work": [
+        {
+          "job_title": "",
+          "employer": "",
+          "task": ["", ""],
+          "start_month": "",
+          "start_year": "",
+          "end_month": "",
+          "end_year": ""
+        }
+      ],
+      "acads": [
+        {
+          "program": "",
+          "school": "",
+          "year_end": "",
+          "academic_achievement": ["", ""],
+          "leadership": ["", ""]
+        }
+      ]
+    }
+  ],
+  "team_project": [
+    {
+      "team_project_title": "",
+      "team_project_type": "website",
+      "team_project_link": ""
+    },
+    {
+      "team_project_title": "",
+      "team_project_type": "figma",
+      "team_project_link": ""
+    },
+    {
+      "team_project_title": "",
+      "team_project_type": "image",
+      "team_project_link": null
+    }
+  ]
+}
