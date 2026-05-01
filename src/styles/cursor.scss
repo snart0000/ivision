@@ -1,0 +1,58 @@
+@use "./variables" as *;
+
+.magic-cursor {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.magic-cursor__particle {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  pointer-events: none;
+
+  background: rgba(249, 161, 49, 0.95);
+
+  box-shadow:
+    0 0 8px rgba(249, 161, 49, 0.95),
+    0 0 14px rgba(255, 215, 140, 0.9),
+    0 0 22px rgba(255, 255, 255, 0.75);
+
+  transform: translate(-50%, -50%);
+  animation: fairyDust 0.65s ease-out forwards;
+}
+
+.magic-cursor__particle::before,
+.magic-cursor__particle::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.magic-cursor__particle::before {
+  top: -5px;
+  left: 5px;
+}
+
+.magic-cursor__particle::after {
+  top: 4px;
+  left: -4px;
+}
+
+@keyframes fairyDust {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -140%) scale(0);
+  }
+}

@@ -1,0 +1,218 @@
+@use "./variables" as *;
+@use "./fonts" as *;
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+
+  background: rgba(31, 30, 26, 0.55);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+  &__container {
+    width: 100%;
+    height: 72px;
+    padding: 0 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+
+    img {
+      width: 62px;
+      height: auto;
+      display: block;
+      object-fit: contain;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    gap: 1.7rem;
+    padding-right: 25px;
+  }
+
+  &__link {
+    border: none;
+    background: transparent;
+    color: $primary-text;
+    font-family: "Neue Montreal";
+    font-size: 0.78rem;
+    cursor: pointer;
+    position: relative;
+    padding: 0.4rem 0;
+    transition: color 0.3s ease;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0%;
+      height: 2px;
+      background: $btn-color;
+      transition: width 0.3s ease;
+    }
+
+    &:hover {
+      color: $btn-color;
+
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+
+  &__burger {
+    display: none;
+  }
+}
+
+#checkbox {
+  display: none;
+}
+
+.toggle {
+  position: relative;
+  width: 40px;
+  cursor: pointer;
+  margin: auto;
+  display: block;
+  height: calc(4px * 3 + 11px * 2);
+}
+
+.bar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 4px;
+  border-radius: calc(4px / 2);
+  background: $primary-text;
+  color: inherit;
+  opacity: 1;
+  transition: none 0.35s cubic-bezier(0.5, -0.35, 0.35, 1.5) 0s;
+}
+
+.bar--top {
+  bottom: calc(50% + 11px + 4px / 2);
+  transition-property: bottom, transform;
+  transition-delay: calc(0s + 0.35s) * 0.6;
+}
+
+.bar--middle {
+  top: calc(50% - 4px / 2);
+  transition-property: opacity, transform;
+  transition-delay: calc(0s + 0.35s * 0.3);
+}
+
+.bar--bottom {
+  top: calc(50% + 11px + 4px / 2);
+  transition-property: top, transform;
+  transition-delay: 0s;
+}
+
+#checkbox:checked + .toggle .bar--top {
+  transform: rotate(-135deg);
+  transition-delay: 0s;
+  bottom: calc(50% - 4px / 2);
+}
+
+#checkbox:checked + .toggle .bar--middle {
+  opacity: 0;
+  transform: rotate(-135deg);
+  transition-delay: calc(0s + 0.35s * 0.3);
+}
+
+#checkbox:checked + .toggle .bar--bottom {
+  top: calc(50% - 4px / 2);
+  transform: rotate(-225deg);
+  transition-delay: calc(0s + 0.35s * 0.6);
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    &__container {
+      height: 68px;
+      padding: 0 1.2rem;
+    }
+
+    &__logo {
+      img {
+        width: 55px;
+      }
+    }
+
+    &__burger {
+      display: block;
+      z-index: 1002;
+    }
+
+    &__menu {
+      position: fixed;
+      top: 68px;
+      right: 0;
+
+      width: 100%;
+      height: calc(100vh - 68px);
+      padding: 2rem 1.5rem;
+
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1.5rem;
+
+    //   background: rgba(31, 30, 26, 0.82);
+    //   backdrop-filter: blur(18px);
+    //   -webkit-backdrop-filter: blur(18px);
+      background: rgba(255, 255, 255, 0.06);
+      backdrop-filter: blur(45px) saturate(220%);
+      -webkit-backdrop-filter: blur(45px) saturate(220%);
+
+    //   border: none;
+      border-left: 1px solid rgba(255, 255, 255, 0.14);
+      border-top: 1px solid rgba(255, 255, 255, 0.01);
+      border-radius: 0;
+      box-shadow: -10px 0 30px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+
+      opacity: 0;
+      visibility: hidden;
+      transform: translateX(100%);
+      transition: transform 0.4s ease, opacity 0.3s ease, visibility 0.3s ease;
+
+      overflow-y: auto;
+
+      &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(31, 30, 26, 0.18);
+            backdrop-filter: blur(55px);
+            -webkit-backdrop-filter: blur(55px);
+            z-index: -1;
+        }
+    }
+
+    &__menu--open {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(0);
+    }
+
+    &__link {
+      font-size: 0.95rem;
+    }
+  }
+}

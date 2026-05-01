@@ -1,6 +1,5 @@
-@import "./variables";
-@import "./fonts";
-
+@use "./variables" as *;
+@use "./fonts" as *;
 * {
   margin: 0;
   padding: 0;
@@ -25,6 +24,7 @@ a {
 section {
   min-height: 100vh;
   padding: 120px 8%;
+  scroll-margin-top: 90px;
 }
 
 .section-title {

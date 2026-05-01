@@ -1,0 +1,217 @@
+@use "./variables" as *;
+@use "./fonts" as *;
+
+.home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  color: $primary-text;
+  background: $primary-bg;
+
+  &__video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+
+  &__overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background:
+      linear-gradient(
+        90deg,
+        rgba(31, 30, 26, 0.55) 0%,
+        rgba(31, 30, 26, 0.25) 45%,
+        rgba(31, 30, 26, 0.55) 100%
+      ),
+      linear-gradient(
+        180deg,
+        rgba(31, 30, 26, 0.35) 0%,
+        rgba(31, 30, 26, 0.3) 45%,
+        rgba(31, 30, 26, 0.75) 100%
+      );
+  }
+
+  &__content {
+    position: relative;
+    z-index: 3;
+    min-height: 100vh;
+    padding: 9rem 0 5rem 9.2%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__brand {
+    h1 {
+      margin: 0;
+      font-family: "Neue Montreal";
+      font-size: clamp(4.7rem, 7vw, 6.9rem);
+      font-weight: 700;
+      line-height: 0.9;
+      letter-spacing: -0.03em;
+
+      span {
+        color: $btn-color;
+      }
+    }
+
+    p {
+      margin: 0.45rem 0 0;
+      font-family: "Neue Montreal";
+      font-size: clamp(1rem, 2.2vw, 2.05rem);
+      font-weight: 400;
+      letter-spacing: -0.05em;
+    }
+  }
+
+  &__brand-link {
+  border: none;
+  padding: 0;
+  background: transparent;
+  color: $btn-color;
+  font: inherit;
+  letter-spacing: inherit;
+  cursor: pointer;
+}
+
+  &__intro {
+    margin-top: clamp(4rem, 9vw, 7rem);
+
+    h2 {
+      margin: 0;
+      font-family: "Neue Montreal";
+      font-size: clamp(1.7rem, 3.6vw, 3.4rem);
+      font-weight: 400;
+    }
+  }
+
+  &__animated-text {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    height: clamp(2.2rem, 4vw, 4rem);
+    overflow: hidden;
+  }
+
+  &__static-text {
+    display: inline-block;
+  }
+
+  &__words {
+  height: clamp(2.2rem, 4vw, 4rem);
+  overflow: hidden;
+  display: inline-block;
+  border: none;
+  padding: 0;
+  background: transparent;
+  font: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  cursor: pointer;
+  text-align: left;
+}
+  &__words-list {
+    display: block;
+    animation: changeWord 6s infinite;
+  }
+
+  &__word {
+    display: block;
+    height: clamp(2.2rem, 4vw, 4rem);
+    color: $btn-color;
+  }
+
+  &__button {
+    margin-top: 1.2rem;
+    padding: 0;
+    border: none;
+    border-bottom: 1px solid $primary-text;
+    background: transparent;
+    color: $primary-text;
+    font-family: "Neue Montreal";
+    font-size: 1rem;
+    cursor: pointer;
+    line-height: 1.2;
+    transition: color 0.3s ease, border-color 0.3s ease;
+
+    span {
+      margin-left: 0.25rem;
+    }
+
+    &:hover {
+      color: $btn-color;
+      border-color: $btn-color;
+    }
+  }
+}
+
+@keyframes changeWord {
+  0%,
+  15% {
+    transform: translateY(0);
+  }
+
+  25%,
+  40% {
+    transform: translateY(-20%);
+  }
+
+  50%,
+  65% {
+    transform: translateY(-40%);
+  }
+
+  75%,
+  90% {
+    transform: translateY(-60%);
+  }
+
+  100% {
+    transform: translateY(-80%);
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    min-height: 100svh;
+
+    &__content {
+      min-height: 100svh;
+      padding: 8rem 1.4rem 4rem;
+    }
+
+    &__brand {
+      h1 {
+        font-size: 4rem;
+      }
+
+      p {
+        max-width: 260px;
+        font-size: 1rem;
+      }
+    }
+
+    &__intro {
+      margin-top: 5rem;
+
+      h2 {
+        font-size: 2rem;
+      }
+    }
+
+    &__animated-text,
+    &__words,
+    &__word {
+      height: 2.4rem;
+    }
+
+    &__button {
+      font-size: 0.78rem;
+    }
+  }
+}
