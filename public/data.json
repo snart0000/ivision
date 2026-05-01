@@ -9,21 +9,21 @@
       "cv": "",
       "name": "Romeo Torrijos",
       "role": "Designer",
-      "bio": "",
+      "bio": "Motivated and detail-oriented Information Technology student seeking an entry-level opportunity where I can apply my skills in graphic design, web design, and UI/UX tools such as Figma and Canva. Passionate about creating visually appealing and user-friendly digital experiences, with a strong foundation in both technical and creative problem-solving. Eager to contribute creativity, leadership experience, and strong communication skills in a collaborative team environment while continuously learning and growing in the field of technology and design.",
       "completed_projects": "",
-      "customer_satisfaction": "",
-      "facebook": "",
-      "instagram": "",
-      "linkedin": "",
-      "github": "",
+      "customer_satisfaction": "100%",
+      "facebook": "https://www.facebook.com/heyy.jude3ee",
+      "instagram": "https://www.instagram.com/jude.v1bes/",
+      "linkedin": "romeo-torrijos-a0ba333a7 ",
+      "github": "https://github.com/jhyyy11",
       "skills": [
         {
           "title": "React",
-          "percentage": ""
+          "percentage": "70"
         },
         {
           "title": "UI/UX Design",
-          "percentage": ""
+          "percentage": "100"
         }
       ],
       "projects": [
@@ -45,25 +45,40 @@
       ],
       "work": [
         {
-          "job_title": "",
-          "employer": "",
-          "task": ["", ""],
-          "start_month": "",
-          "start_year": "",
+          "job_title": "Social Media Manager",
+          "employer": "Self Employed",
+          "task": ["Social Media Management", ""],
+          "start_month": "October",
+          "start_year": "2022",
           "end_month": "",
-          "end_year": ""
+          "end_year": "Present"
+        },
+        {
+          "job_title": "Free Lancer",
+          "employer": "Commisioned",
+          "task": ["Video Editing", "Photo Editing", "Graphic Design", "Foundational Microsoft Tools"],
+          "start_month": "October",
+          "start_year": "2022",
+          "end_month": "",
+          "end_year": "Present"
         }
       ],
       "acads": [
         {
-          "program": "",
-          "school": "",
-          "year_end": "",
-          "academic_achievement": ["", ""],
+          "program": "Bachelor of Science in Information Technology",
+          "school": "Cavite State University - Naic Campus",
+          "year_end": "2027",
+          "academic_achievement": ["President's Lister (2024-Present)", ""],
           "leadership": ["", ""]
+        },
+        {
+          "program": "Bachelor of Science in Information Technology",
+          "school": "Cavite State University - CCAT Campus",
+          "year_end": "2024",
+          "academic_achievement": ["Dean's Lister (2023-2024)", ""]
         }
       ]
-    },
+    }, 
     {
       "id": "02",
       "profile_image": "",
@@ -76,10 +91,10 @@
       "bio": "",
       "completed_projects": "",
       "customer_satisfaction": "",
-      "facebook": "",
-      "instagram": "",
+      "facebook": "https://web.facebook.com/louiedave248",
+      "instagram": "https://www.instagram.com/shingshangsh/",
       "linkedin": "",
-      "github": "",
+      "github": "https://github.com/louieramilo0101",
       "skills": [
         {
           "title": "React",
@@ -137,21 +152,41 @@
       "cv": "",
       "name": "Elijah Poblete",
       "role": "Database Manager",
-      "bio": "",
+      "bio": "Highly motivated Full-Stack Developer and IT student with a proven track record of building responsive web applications using React.js, Node.js, and relational databases. A consistent President’s Lister and former Vice President of Student Government, I excel at leading complex technical initiatives like CiviCORE while managing organizational governance and cross-functional teams. I am dedicated to leveraging my technical expertise and leadership experience to deliver efficient, user-centered digital solutions.",
       "completed_projects": "",
-      "customer_satisfaction": "",
-      "facebook": "",
-      "instagram": "",
-      "linkedin": "",
-      "github": "",
+      "customer_satisfaction": "100%",
+      "facebook": "www.facebook.com/elijah.poblete",
+      "instagram": "https://www.instagram.com/pobleteelijah/",
+      "linkedin": "www.linkedin.com/in/elijah-poblete-a22830355",
+      "github": "https://github.com/ElijahPoblete/ElijahPoblete",
       "skills": [
         {
           "title": "React",
-          "percentage": ""
+          "percentage": "90%"
         },
         {
-          "title": "UI/UX Design",
-          "percentage": ""
+          "title": "PHP",
+          "percentage": "100%"
+        },
+        {
+          "title": "MySQL",
+          "percentage": "100%"
+        },
+        {
+          "title": "Laravel",
+          "percentage": "80&"
+        },
+        {
+          "title": "JavaScript",
+          "percentage": "100%"
+        },
+        {
+          "title": "CSS5",
+          "percentage": "100%"
+        },
+        {
+          "title": "HTML5",
+          "percentage": "100%"
         }
       ],
       "projects": [
@@ -173,22 +208,38 @@
       ],
       "work": [
         {
-          "job_title": "",
-          "employer": "",
-          "task": ["", ""],
+          "job_title": "DESO Technical Suppoer",
+          "employer": "COMELEC",
+          "task": ["Coordinator", "Problem Solving", "Debugging"],
+          "start_month": "May",
+          "start_year": "2024",
+          "end_month": "may",
+          "end_year": "2024"
+        },
+        {
+          "job_title": "Free Lancer",
+          "employer": "Commisioned",
+          "task": ["Video Editing", "Photo Editing", "Graphic Design", "Microsoft Tools"],
           "start_month": "",
-          "start_year": "",
+          "start_year": "2023",
           "end_month": "",
-          "end_year": ""
+          "end_year": "Present"
         }
       ],
       "acads": [
         {
-          "program": "",
-          "school": "",
+          "program": "Bachelor of Science in Information Technology",
+          "school": "Cavite State University - Naic Campus", 
+          "year_end": "2027",
+          "academic_achievement": ["Dean's Lister (2023)", "President's Lister (2024 to Present)", "3x3 Programming Contest 1st Placer"],
+          "leadership": ["Photojournalist A.Y. 2022-2024", "Technical Staff of Seminar's", "Vice President A.Y. 2024-2025", "Proponent of Quench5 Project (Income Generating Project of the Central Student Government)"]
+        },
+        {
+          "program": "COMTECH Educational Development Program",
+          "school": "DATACOM - Institute of Computer Technology", 
           "year_end": "",
-          "academic_achievement": ["", ""],
-          "leadership": ["", ""]
+          "academic_achievement": [""],
+          "leadership": [""]
         }
       ]
     },
@@ -201,21 +252,57 @@
       "cv": "",
       "name": "Albert Tan",
       "role": "UI/UX Programmer",
-      "bio": "",
+      "bio": "Results-driven Web Developer with hands-on experience in full-stack development using React.js and Node.js. Skilled in building responsive web applications, debugging systems, and optimizing performance. Strong background in leadership and project management through academic and professional experience. Passionate about delivering efficient, user-centered digital solutions.",
       "completed_projects": "",
-      "customer_satisfaction": "",
-      "facebook": "",
-      "instagram": "",
-      "linkedin": "",
+      "customer_satisfaction": "100%",
+      "facebook": "www.facebook.com/abtttan/",
+      "instagram": "http://instagram.com/atan.dev/?hl=en",
+      "linkedin": "alberttan18",
       "github": "",
       "skills": [
         {
           "title": "React",
-          "percentage": ""
+          "percentage": "100%"
         },
         {
-          "title": "UI/UX Design",
-          "percentage": ""
+          "title": "Node.js",
+          "percentage": "100%"
+        },
+        {
+          "title": "Laravel",
+          "percentage": "100%"
+        },
+        {
+          "title": "CSS5",
+          "percentage": "100%"
+        },
+        {
+          "title": "HTML5",
+          "percentage": "100%"
+        },
+        {
+          "title": "JavaScript",
+          "percentage": "100%"
+        },
+        {
+          "title": "TypeScript",
+          "percentage": "100%"
+        },
+        {
+          "title": "C#",
+          "percentage": "100%"
+        },
+        {
+          "title": "C++",
+          "percentage": "100%"
+        },
+        {
+          "title": "MySQL",
+          "percentage": "100%"
+        },
+        {
+          "title": "VSCode",
+          "percentage": "100%"
         }
       ],
       "projects": [
@@ -237,32 +324,40 @@
       ],
       "work": [
         {
-          "job_title": "",
-          "employer": "",
-          "task": ["", ""],
-          "start_month": "",
-          "start_year": "",
+          "job_title": "JUNIOR WEB DEVELOPER ",
+          "employer": "Tritonica Group LTD",
+          "task": ["Development of web applications", "Maintenance of web applications", "Debugging", "Troubleshooting", "Responsive web Development", "Responsive web "],
+          "start_month": "March",
+          "start_year": "202",
           "end_month": "",
-          "end_year": ""
+          "end_year": "Present"
         }
       ],
       "acads": [
         {
-          "program": "",
-          "school": "",
-          "year_end": "",
+          "program": "Bachelor of Science in Information Technology",
+          "school": "CAVITE STATE UNIVERSITY - NAIC CAMPUS",
+          "year_end": "2026",
           "academic_achievement": ["", ""],
-          "leadership": ["", ""]
+          "leadership": ["Project Manager and Programmer of Capstone Project entitled “Integrated License Appointment System: Streamlining Application Verification and Scheduling for Land Transportation Office”", ""]
+        },
+        {
+          "program": "Diploma in Information and Communication Technology ",
+          "school": "POLYTECHNIC UNIVERSITY OF THE PHILIPPINES - MARAGONDON CAMPUS",
+          "year_end": "2020-2023",
+          "academic_achievement": ["President's Lister (2020-2023)", "Outstanding DICT Student Awardee", "", ""],
+          "leadership": ["Project Manager and Front-End Developer of Capstone Project entitled “Laboratory Inventory System for PUPMB Laboratory Office”", "Team Leader - Area IX for Level II Accreditation of PUPMC", "President of Association of Technology Students A.Y. 2022-2023", "Business Manager of Association of Technology Students A.Y. 2021-2022", "Moonton Student Leader (2022-2023)"]
         }
       ]
     }
+    
   ],
   "team_project": [
     {
       "team_project_title": "",
       "team_project_type": "website",
       "team_project_link": ""
-    },
+    },  
     {
       "team_project_title": "",
       "team_project_type": "figma",
