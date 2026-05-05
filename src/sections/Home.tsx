@@ -3,6 +3,7 @@ import homeVideo from "../assets/media/home-vid.mp4";
 import Cursor from "../components/Cursor";
 import Candle from "../components/Candle";
 
+
 const Home = () => {
 
     const scrollToSection = (id: string) => {
