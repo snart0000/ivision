@@ -364,18 +364,21 @@
     {
       "team_project_title": "",
       "team_project_image": "",
+      "team_project_description": "",
       "team_project_type": "website",
       "team_project_link": ""
     },  
     {
       "team_project_title": "",
       "team_project_image": "",
+      "team_project_description": "",
       "team_project_type": "figma",
       "team_project_link": ""
     },
     {
       "team_project_title": "",
       "team_project_image": "",
+      "team_project_description": "",
       "team_project_type": "image",
       "team_project_link": null
     }
