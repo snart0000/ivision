@@ -60,7 +60,11 @@ const Home = () => {
             </button>
           </h2>
 
-          <button className="home__button">
+          <button 
+          className="home__button"
+          onClick={() => scrollToSection("contact-us")}
+          aria-label="Go to contact us section"
+          >
             GET IN TOUCH <span>↗</span>
           </button>
         </div>

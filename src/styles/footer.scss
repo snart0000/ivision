@@ -1,0 +1,111 @@
+@use "./variables" as *;
+@use "./fonts" as *;
+
+.footer {
+  width: 100%;
+  min-height: 150px;
+  padding: 1.2rem 2rem;
+  background: $primary-bg;
+  color: $primary-text;
+
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 0.8fr;
+  align-items: center;
+  gap: 2rem;
+
+  font-family: "Neue Montreal";
+
+  &__brand {
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+
+    img {
+      width: 155px;
+      height: auto;
+      display: block;
+      object-fit: contain;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: clamp(3rem, 5vw, 4.2rem);
+      font-weight: 700;
+      letter-spacing: -0.06em;
+
+      span {
+        color: $btn-color;
+      }
+    }
+  }
+
+  &__contact {
+    p {
+      margin: 0 0 0.3rem;
+      font-size: 0.95rem;
+      line-height: 1.2;
+    }
+  }
+
+  &__right {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+
+    a {
+      color: $primary-text;
+      font-size: 1.9rem;
+      line-height: 1;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $btn-color;
+      }
+    }
+  }
+
+  &__copyright {
+    margin: 0;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 2rem 1.4rem;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    text-align: center;
+
+    &__brand {
+      justify-content: center;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      img {
+        width: 125px;
+      }
+
+      h2 {
+        font-size: 3rem;
+      }
+    }
+
+    &__right {
+      align-items: center;
+      gap: 1.2rem;
+    }
+
+    &__socials {
+      justify-content: center;
+    }
+  }
+}

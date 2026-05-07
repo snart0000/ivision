@@ -15,6 +15,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
+  const [activeSection, setActiveSection] = useState("home");
 
   const scrollToSection = (id: string) => {
     const section = document.getElementById(id);
@@ -46,6 +47,31 @@ const Navbar = () => {
   }, [location]);
 
   useEffect(() => {
+  const handleScroll = () => {
+    const sections = navLinks
+      .map((link) => document.getElementById(link.target))
+      .filter(Boolean) as HTMLElement[];
+
+    let currentSection = "home";
+
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop - 120;
+
+      if (window.scrollY >= sectionTop) {
+        currentSection = section.id;
+      }
+    });
+
+    setActiveSection(currentSection);
+  };
+
+  handleScroll();
+  window.addEventListener("scroll", handleScroll);
+
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
+
+  useEffect(() => {
     if (isOpen) {
         document.body.style.overflow = "hidden";
     } else {
@@ -72,7 +98,12 @@ const Navbar = () => {
           {navLinks.map((link) => (
             <button
               key={link.target}
-              className="navbar__link"
+              // className="navbar__link"
+              className={`navbar__link ${
+                activeSection === link.target
+                  ? "navbar__link--active"
+                  : ""
+              }`}
               onClick={() => handleNavClick(link.target)}
             >
               {link.label}

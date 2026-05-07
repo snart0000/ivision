@@ -1,0 +1,34 @@
+@use "./variables" as *;
+@use "./fonts" as *;
+
+.team-project {
+  width: 100%;
+  min-height: 100vh;
+  padding: 6rem 9.2%;
+  background: $primary-bg;
+  color: $primary-text;
+
+  &__header {
+    h2 {
+      margin: 0;
+      font-family: "Neue Montreal";
+      font-size: clamp(2.5rem, 5vw, 5rem);
+      font-weight: 700;
+      line-height: 0.95;
+      letter-spacing: -0.04em;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .team-project {
+    min-height: 100svh;
+    padding: 5rem 1.4rem;
+
+    &__header {
+      h2 {
+        font-size: 3rem;
+      }
+    }
+  }
+}
