@@ -29,16 +29,19 @@
       "projects": [
         {
           "project_title": "",
+          "project_image": "",
           "type": "website",
           "link": ""
         },
         {
           "project_title": "",
+          "project_image": "",
           "type": "figma",
           "link": ""
         },
         {
           "project_title": "",
+          "project_image": "",
           "type": "image",
           "link": null
         }
@@ -108,16 +111,19 @@
       "projects": [
         {
           "project_title": "",
+          "project_image": "",
           "type": "website",
           "link": ""
         },
         {
           "project_title": "",
+          "project_image": "",
           "type": "figma",
           "link": ""
         },
         {
           "project_title": "",
+          "project_image": "",
           "type": "image",
           "link": null
         }
@@ -161,47 +167,46 @@
       "github": "https://github.com/ElijahPoblete/ElijahPoblete",
       "skills": [
         {
-          "title": "React",
+          "title": "Frontend Development",
           "percentage": "90%"
         },
         {
-          "title": "PHP",
+          "title": "UI/UX Design",
           "percentage": "100%"
         },
         {
-          "title": "MySQL",
+          "title": "API Integration",
           "percentage": "100%"
         },
         {
-          "title": "Laravel",
+          "title": "Backend Development",
           "percentage": "80&"
         },
         {
-          "title": "JavaScript",
+          "title": "Database Design and Management",
           "percentage": "100%"
         },
         {
-          "title": "CSS5",
-          "percentage": "100%"
-        },
-        {
-          "title": "HTML5",
+          "title": "Network Security",
           "percentage": "100%"
         }
       ],
       "projects": [
         {
           "project_title": "",
+          "project_image": "",
           "type": "website",
           "link": ""
         },
         {
           "project_title": "",
+          "project_image": "",
           "type": "figma",
           "link": ""
         },
         {
           "project_title": "",
+          "project_image": "",
           "type": "image",
           "link": null
         }
@@ -308,16 +313,19 @@
       "projects": [
         {
           "project_title": "",
+          "project_image": "",
           "type": "website",
           "link": ""
         },
         {
           "project_title": "",
+          "project_image": "",
           "type": "figma",
           "link": ""
         },
         {
           "project_title": "",
+          "project_image": "",
           "type": "image",
           "link": null
         }
@@ -355,16 +363,19 @@
   "team_project": [
     {
       "team_project_title": "",
+      "team_project_image": "",
       "team_project_type": "website",
       "team_project_link": ""
     },  
     {
       "team_project_title": "",
+      "team_project_image": "",
       "team_project_type": "figma",
       "team_project_link": ""
     },
     {
       "team_project_title": "",
+      "team_project_image": "",
       "team_project_type": "image",
       "team_project_link": null
     }
