@@ -2,32 +2,240 @@
 @use "./fonts" as *;
 
 .team-project {
+  position: relative;
   width: 100%;
   min-height: 100vh;
-  padding: 6rem 9.2%;
-  background: $primary-bg;
+  padding: 2rem 0 6rem 2rem;
   color: $primary-text;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  transition: background-image 0.4s ease;
 
-  &__header {
-    h2 {
-      margin: 0;
-      font-family: "Neue Montreal";
-      font-size: clamp(2.5rem, 5vw, 5rem);
-      font-weight: 700;
-      line-height: 0.95;
-      letter-spacing: -0.04em;
+  &__overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.918);
+    z-index: 1;
+    width: 100%;
+  }
+
+  &__title {
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    font-family: "Neue Montreal";
+    font-size: 1rem;
+    color: $primary-text;
+    letter-spacing: -0.03em;
+    padding: 40px 40px 0px 65px;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 2;
+    min-height: calc(100vh - 8rem);
+    display: grid;
+    grid-template-columns: 45% 55%;
+    align-items: center;
+    gap: 10rem;
+    padding-left: 7.2%;
+  }
+
+  &__info {
+    max-width: 580px;
+
+    p {
+      margin: 2rem 0 0;
+      max-width: 500px;
+      font-size: 1rem;
+      line-height: 1.5;
+      color: $primary-text;
+      text-align: justify;
+    }
+  }
+
+  &__label {
+    display: inline-block;
+    color: $primary-text;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: 0.3s ease;
+
+    &:hover {
+      color: $btn-color;
+    }
+  }
+
+  &__controls {
+    position: absolute;
+    left: 9.2%;
+    bottom: 10rem;
+    z-index: 5;
+    display: flex;
+    gap: 0.8rem;
+
+    button {
+      width: 42px;
+      height: 42px;
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.08);
+      color: $primary-text;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: 0.3s ease;
+
+      &:hover {
+        background: $btn-color;
+        color: #111;
+      }
+    }
+  }
+
+  &__carousel {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    overflow: visible;
+    padding-right: 3rem;
+
+    &--next {
+      animation: slideFromRight 0.45s ease;
+    }
+
+    &--prev {
+      animation: slideFromLeft 0.45s ease;
+    }
+  }
+
+  &__card {
+    flex: 0 0 220px;
+    height: 270px;
+    padding: 1.8rem;
+    border-radius: 1.7rem;
+    background: $primary-text;
+    color: #000;
+    cursor: pointer;
+    transform: scale(0.9);
+    opacity: 0.75;
+    transition: 0.35s ease;
+
+    img {
+      width: 100%;
+      height: 170px;
+      object-fit: cover;
+      border-radius: 0.2rem;
+      display: block;
+    }
+
+    h3 {
+      margin: 1.8rem 0 0;
+      text-align: center;
+      font-size: 0.65rem;
+      font-weight: 500;
+      line-height: 1.3;
+      color: #000;
+    }
+
+    &:hover {
+      opacity: 1;
+      transform: scale(0.95);
+    }
+
+    &--active {
+      flex: 0 0 340px;
+      height: 440px;
+      padding: 2rem;
+      transform: scale(1);
+      opacity: 1;
+
+      img {
+        height: 315px;
+      }
+
+      h3 {
+        font-size: 0.95rem;
+      }
     }
   }
 }
 
-@media (max-width: 768px) {
-  .team-project {
-    min-height: 100svh;
-    padding: 5rem 1.4rem;
+@keyframes slideFromRight {
+  from {
+    opacity: 0.7;
+    transform: translateX(80px);
+  }
 
-    &__header {
-      h2 {
-        font-size: 3rem;
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromLeft {
+  from {
+    opacity: 0.7;
+    transform: translateX(-80px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 900px) {
+  .team-project {
+    padding: 2rem 1.4rem 6rem;
+
+    &__title {
+      padding: 40px 0 0;
+    }
+
+    &__content {
+      grid-template-columns: 1fr;
+      padding-left: 0;
+      gap: 2rem;
+    }
+
+    &__controls {
+      left: 1.4rem;
+      bottom: 2rem;
+    }
+
+    &__carousel {
+      gap: 1rem;
+      overflow-x: auto;
+      padding-bottom: 1rem;
+      scrollbar-width: none;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+    &__card {
+      flex: 0 0 190px;
+      height: 250px;
+
+      img {
+        height: 155px;
+      }
+
+      h3 {
+      margin: 0.8rem 0 0;
+    }
+
+      &--active {
+        flex: 0 0 280px;
+        height: 380px;
+
+        img {
+          height: 260px;
+        }
       }
     }
   }

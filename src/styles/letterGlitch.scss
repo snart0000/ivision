@@ -1,0 +1,36 @@
+.letter-glitch {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  overflow: hidden;
+
+  canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__outer-vignette,
+  &__center-vignette {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+
+  &__outer-vignette {
+    background: radial-gradient(
+      circle,
+      rgba(0, 0, 0, 0) 60%,
+      rgba(0, 0, 0, 1) 100%
+    );
+  }
+
+  &__center-vignette {
+    background: radial-gradient(
+      circle,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0) 60%
+    );
+  }
+}

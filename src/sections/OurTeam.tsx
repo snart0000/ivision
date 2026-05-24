@@ -1,5 +1,24 @@
 import { useEffect, useState } from "react";
 import "../styles/ourTeam.scss";
+import LogoLoop from "../components/LogoLoop";
+import {
+  SiHtml5,
+  SiJavascript,
+  SiSass,
+  SiTailwindcss,
+  SiTypescript,
+  SiReact,
+  SiNodedotjs,
+  SiGo,
+  SiMysql,
+  SiPhp,
+  SiFigma,
+  SiCanva,
+} from "react-icons/si";
+import { FaJava } from "react-icons/fa";
+import { TbBrandCpp } from "react-icons/tb";
+import { VscVscode } from "react-icons/vsc";
+import { TbBrandAdobePhotoshop } from "react-icons/tb";
 
 type TeamMember = {
   id: string;
@@ -9,6 +28,25 @@ type TeamMember = {
   name: string;
   role: string;
 };
+
+const techLogos = [
+  { node: <SiHtml5 />, title: "HTML" },
+  { node: <FaJava />, title: "Java" },
+  { node: <SiJavascript />, title: "JavaScript" },
+  { node: <SiSass />, title: "Sass" },
+  { node: <SiTailwindcss />, title: "Tailwind" },
+  { node: <SiTypescript />, title: "TypeScript" },
+  { node: <SiReact />, title: "React.js" },
+  { node: <SiNodedotjs />, title: "Node.js" },
+  { node: <SiGo />, title: "Go" },
+  { node: <SiMysql />, title: "MySQL" },
+  { node: <TbBrandCpp />, title: "C++" },
+  { node: <SiPhp />, title: "PHP" },
+  { node: <VscVscode />, title: "VS Code" },
+  { node: <SiFigma />, title: "Figma" },
+  { node: <SiCanva />, title: "Canva" },
+  { node: <TbBrandAdobePhotoshop />, title: "Photoshop" },
+];
 
 const OurTeam = () => {
   const [members, setMembers] = useState<TeamMember[]>([]);
@@ -51,12 +89,26 @@ const OurTeam = () => {
               className="team-card__full"
             />
 
-            <a href="#" className="team-card__btn">
+            <a href="/" className="team-card__btn">
               LEARN MORE ↗
             </a>
           </div>
         ))}
       </div>
+       <footer className="our-team__footer">
+        <LogoLoop
+          logos={techLogos}
+          speed={80}
+          direction="left"
+          logoHeight={34}
+          gap={44}
+          hoverSpeed={10}
+          scaleOnHover
+          fadeOut
+          fadeOutColor="#111111"
+          ariaLabel="Technology stack and tools"
+        />
+      </footer>
     </section>
   );
 };

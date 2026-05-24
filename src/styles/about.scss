@@ -1,0 +1,161 @@
+@use "./variables" as *;
+@use "./fonts" as *;
+
+.about-us {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: "Neue Montreal", sans-serif;
+  color: $primary-text;
+
+  &__overlay {
+    min-height: 100vh;
+    background: rgba(10, 13, 11, 0.82);
+    display: flex;
+    align-items: center;
+    padding: 80px 6%;
+  }
+
+  &__content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2.1fr 1fr;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__text {
+    max-width: 620px;
+
+    span {
+      display: block;
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    h2 {
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      line-height: 1;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    p {
+      font-size: clamp(1rem, 1.5vw, 1.35rem);
+      line-height: 1.45;
+      margin-bottom: 28px;
+      color: rgba(235, 235, 235, 0.9);
+    }
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: min(360px, 80%);
+      filter: drop-shadow(0 0 18px rgba(255, 255, 255, 0.18));
+      animation: floatLogo 4s ease-in-out infinite;
+    }
+  }
+
+  &__skills {
+    height: 120px;
+    background: rgba(0, 0, 0, 0.38);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    backdrop-filter: blur(2px);
+
+      &:hover .about-us__skills-track {
+      animation-play-state: paused;
+    }
+
+  }
+
+  &__skills-track {
+      display: flex;
+      align-items: center;
+      width: max-content;
+      animation: loopSkills 35s linear infinite;
+      will-change: transform;
+
+      span {
+      white-space: nowrap;
+      font-size: 0.95rem;
+      font-weight: 700;
+      margin-right: 58px;
+      color: $primary-text;
+      transition: transform 0.25s ease, opacity 0.25s ease;
+      cursor: default;
+
+      &:hover {
+        transform: scale(1.18);
+        opacity: 1;
+      }
+    }
+  }
+}
+
+@keyframes loopSkills {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-25%);
+  }
+}
+
+@keyframes floatLogo {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@media (max-width: 768px) {
+  .about-us {
+    background-attachment: scroll;
+
+    &__overlay {
+      padding: 70px 24px;
+    }
+
+    &__content {
+      grid-template-columns: 1fr;
+      gap: 40px;
+      text-align: left;
+    }
+
+    &__logo {
+      justify-content: center;
+
+      img {
+        width: 220px;
+      }
+    }
+
+    &__skills {
+      height: 90px;
+    }
+
+    &__skills-track {
+      animation-duration: 16s;
+
+      span {
+        font-size: 0.8rem;
+        margin-right: 38px;
+      }
+    }
+  }
+}

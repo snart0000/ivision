@@ -1,10 +1,12 @@
 import "../styles/footer.scss";
 import logo from "../assets/media/iv-logo.png";
 import { FaFacebook, FaInstagramSquare, FaLinkedin } from "react-icons/fa";
+import ParticleBg from "./ParticleBg";
 
 const Footer = () => {
   return (
     <footer className="footer" id="contact-us">
+      <ParticleBg />
       <div className="footer__brand">
         <img src={logo} alt="IVision Logo" />
         <h2>

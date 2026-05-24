@@ -1,0 +1,249 @@
+@use "./variables" as *;
+@use "./fonts" as *;
+
+.contact-us {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  color: $primary-text;
+  background: $primary-bg;
+
+  &__video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+
+  &__overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background:
+      linear-gradient(
+        90deg,
+        rgba(31, 30, 26, 0.7) 0%,
+        rgba(31, 30, 26, 0.35) 45%,
+        rgba(31, 30, 26, 0.65) 100%
+      ),
+      linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.45) 0%,
+        rgba(0, 0, 0, 0.35) 45%,
+        rgba(0, 0, 0, 0.8) 100%
+      );
+  }
+
+  &__content {
+    position: relative;
+    z-index: 3;
+    min-height: 100vh;
+    padding: 5rem 5.2%;
+  }
+
+  &__label {
+    margin: 0 0 3rem;
+    font-family: "Neue Montreal";
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    align-items: center;
+    gap: 6rem;
+  }
+
+  &__info {
+    h2 {
+      margin: 0 0 1.5rem;
+      font-family: "Neue Montreal";
+      font-size: clamp(3rem, 6vw, 5.5rem);
+      font-weight: 800;
+      line-height: 0.9;
+      text-transform: uppercase;
+    }
+  }
+
+  &__description {
+    margin: 0 0 2.5rem;
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    line-height: 1.15;
+  }
+
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+
+    p {
+      margin: 0;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 1rem;
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    svg {
+      font-size: 1rem;
+      color: rgba(255, 255, 255, 0.85);
+    }
+  }
+}
+
+.form-container {
+  width: 100%;
+  max-width: 470px;
+  background:
+    linear-gradient(#212121, #212121) padding-box,
+    linear-gradient(120deg, transparent 25%, #64120d, #003d63, #31751f, #726255) border-box;
+  border: 2px solid transparent;
+  padding: 32px 24px;
+  font-size: 14px;
+  color: $primary-text;
+  box-sizing: border-box;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 22px;
+}
+
+.heading {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Neue Montreal";
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: #777;
+  position: relative;
+}
+
+.form-input {
+  width: 100%;
+  color: white;
+  background: transparent;
+  border: 1px solid #414141;
+  border-radius: 5px;
+  padding: 12px 10px;
+  outline: none;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.message-input {
+  min-height: 130px;
+  resize: none;
+}
+
+.form-group label {
+  position: absolute;
+  top: 7px;
+  left: 8px;
+  padding: 0 5px;
+  pointer-events: none;
+  transition: 0.3s ease;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+.form-group input:focus ~ label,
+.form-group input:valid ~ label,
+.form-group textarea:focus ~ label,
+.form-group textarea:valid ~ label {
+  top: -16px;
+  left: 5px;
+  background: #212121;
+  color: #bdb8b8;
+  font-size: 12px;
+}
+
+.form button {
+  border-radius: 5px;
+  padding: 12px;
+  background: $primary-bg;
+  color: $primary-text;
+  border: 1px solid #414141;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.form button:hover {
+  background: $btn-color;
+  color: $primary-text;
+}
+
+.form-group small {
+  color: #ff7b7b;
+  font-size: 0.75rem;
+}
+
+.form-status {
+  margin: -8px 0 0;
+  font-size: 0.85rem;
+  color: #bdb8b8;
+  text-align: center;
+}
+
+.form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 900px) {
+  .contact-us {
+    &__wrapper {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+
+    .form-container {
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-us {
+    min-height: 100svh;
+
+    &__content {
+      min-height: 100svh;
+      padding: 5rem 1.4rem;
+    }
+
+    &__label {
+      margin-bottom: 2rem;
+    }
+
+    &__info {
+      h2 {
+        font-size: 3rem;
+      }
+    }
+
+    &__description {
+      font-size: 1.35rem;
+
+      br {
+        display: none;
+      }
+    }
+  }
+}

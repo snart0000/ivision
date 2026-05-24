@@ -14,16 +14,32 @@
       "customer_satisfaction": "100%",
       "facebook": "https://www.facebook.com/heyy.jude3ee",
       "instagram": "https://www.instagram.com/jude.v1bes/",
-      "linkedin": "romeo-torrijos-a0ba333a7 ",
+      "linkedin": "https://www.linkedin.com/in/romeo-torrijos-a0ba333a7/",
       "github": "https://github.com/jhyyy11",
       "skills": [
         {
-          "title": "React",
-          "percentage": "70"
+          "title": "Frontend Development",
+          "percentage": "90%"
         },
         {
           "title": "UI/UX Design",
-          "percentage": "100"
+          "percentage": "100%"
+        },
+        {
+          "title": "API Integration",
+          "percentage": "100%"
+        },
+        {
+          "title": "Backend Development",
+          "percentage": "80&"
+        },
+        {
+          "title": "Database Design and Management",
+          "percentage": "100%"
+        },
+        {
+          "title": "Network Security",
+          "percentage": "100%"
         }
       ],
       "projects": [
@@ -99,13 +115,29 @@
       "linkedin": "",
       "github": "https://github.com/louieramilo0101",
       "skills": [
-        {
-          "title": "React",
-          "percentage": ""
+       {
+          "title": "Frontend Development",
+          "percentage": "90%"
         },
         {
           "title": "UI/UX Design",
-          "percentage": ""
+          "percentage": "100%"
+        },
+        {
+          "title": "API Integration",
+          "percentage": "100%"
+        },
+        {
+          "title": "Backend Development",
+          "percentage": "80&"
+        },
+        {
+          "title": "Database Design and Management",
+          "percentage": "100%"
+        },
+        {
+          "title": "Network Security",
+          "percentage": "100%"
         }
       ],
       "projects": [
@@ -163,7 +195,7 @@
       "customer_satisfaction": "100%",
       "facebook": "www.facebook.com/elijah.poblete",
       "instagram": "https://www.instagram.com/pobleteelijah/",
-      "linkedin": "www.linkedin.com/in/elijah-poblete-a22830355",
+      "linkedin": "https://www.linkedin.com/in/elijah-poblete-a22830355/",
       "github": "https://github.com/ElijahPoblete/ElijahPoblete",
       "skills": [
         {
@@ -262,51 +294,31 @@
       "customer_satisfaction": "100%",
       "facebook": "www.facebook.com/abtttan/",
       "instagram": "http://instagram.com/atan.dev/?hl=en",
-      "linkedin": "alberttan18",
+      "linkedin": "https://www.linkedin.com/in/alberttan18/",
       "github": "",
       "skills": [
         {
-          "title": "React",
+          "title": "Frontend Development",
           "percentage": "100%"
         },
         {
-          "title": "Node.js",
+          "title": "UI/UX Design",
           "percentage": "100%"
         },
         {
-          "title": "Laravel",
+          "title": "API Integration",
           "percentage": "100%"
         },
         {
-          "title": "CSS5",
+          "title": "Backend Development",
           "percentage": "100%"
         },
         {
-          "title": "HTML5",
+          "title": "Database Design and Management",
           "percentage": "100%"
         },
         {
-          "title": "JavaScript",
-          "percentage": "100%"
-        },
-        {
-          "title": "TypeScript",
-          "percentage": "100%"
-        },
-        {
-          "title": "C#",
-          "percentage": "100%"
-        },
-        {
-          "title": "C++",
-          "percentage": "100%"
-        },
-        {
-          "title": "MySQL",
-          "percentage": "100%"
-        },
-        {
-          "title": "VSCode",
+          "title": "Network Security",
           "percentage": "100%"
         }
       ],
@@ -362,28 +374,75 @@
   ],
   "team_project": [
     {
-      "project_id": "",
-      "team_project_title": "",
-      "team_project_image": "",
-      "team_project_description": "",
-      "team_project_type": "website",
-      "team_project_link": ""
+      "project_id": "1",
+      "team_project_title": "Recreating the Homepage: A UI Imitation Study in Figma",
+      "team_project_image": "/images/projects/p1.png",
+      "team_project_bg_image": "./images/projects/p2-bg.png",
+      "team_project_description": "One of the best ways to improve UI design skills is by studying and recreating existing interfaces. Rebuilding a homepage in Figma helps you understand important design decisions such as spacing, navigation structure, call-to-action placement, and visual hierarchy.",
+      "team_project_type": "figma",
+      "team_project_link": "https://www.figma.com/proto/7QEocFIqD8f5HPXGi9FMUl/ITEC-101_Poblete-Ramilo-Tan-Torrijos_ChatGPT?node-id=2-4&t=JSBDeL1ej41kdLPs-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1"
     },  
     {
-      "project_id": "",
-      "team_project_title": "",
-      "team_project_image": "",
-      "team_project_description": "",
+      "project_id": "2",
+      "team_project_title": "Usability Evaluation and UI Improvement",
+      "team_project_image": "/images/projects/p2.png",
+      "team_project_bg_image": "./images/projects/p3-bg.png",
+      "team_project_description": "User Interface imitation helps users observe design details, but effective HCI practice also requires evaluation and improvement. In this activity, you will analyze Facebook’s mobile homepage and identify usability issues based on HCI principles, such as cognitive overload, poor system status visibility, overcrowded navigation, inconsistent icons, and accessibility concerns like contrast, font size, and touch targets.",
       "team_project_type": "figma",
-      "team_project_link": ""
+      "team_project_link": "https://www.figma.com/proto/E0Y2fupGdDLljM7sbLjoxP/ITEC-101--LAB-2?node-id=1-2&p=f&t=ts599BwTGWpbVYUq-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1"
     },
     {
-      "project_id": "",
-      "team_project_title": "",
-      "team_project_image": "",
-      "team_project_description": "",
-      "team_project_type": "image",
-      "team_project_link": null
+      "project_id": "3",
+      "team_project_title": "Google’s Material 3 Design Mobile App Prototype",
+      "team_project_image": "/images/projects/p3.png",
+      "team_project_bg_image": "./images/projects/p4-bg.png",
+      "team_project_description": "Modern mobile applications require not only functionality but also consistent and user-centered design. Google’s Material 3 provides a comprehensive design system that helps developers and designers create visually appealing, accessible, and cohesive user interfaces.",
+      "team_project_type": "figma",
+      "team_project_link": "https://www.figma.com/proto/jhkpBeflDegvlUy4N5XRrz/ITEC-101--LAB-3?node-id=1-2&p=f&t=P3oYg0CwCpQm0yqf-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2"
+    },
+     {
+      "project_id": "4",
+      "team_project_title": "Multi-Step Mobile Authentication",
+      "team_project_image": "/images/projects/p4.png",
+      "team_project_bg_image": "./images/projects/p5-bg.png",
+      "team_project_description": "Mobile applications often require users to register and log in to access personalized features. In Mobile HCI, effective authentication design helps users complete these tasks easily on small screens. Multi-step registration forms improve usability by dividing information into smaller sections and reducing cognitive load.",
+      "team_project_type": "figma",
+      "team_project_link": "https://www.figma.com/proto/2ih19bvgk6wjRAxpozaQwF/LAB-4?node-id=1-2&p=f&t=n6rjtKhfz1vDcQ2o-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2"
+    },
+     {
+      "project_id": "5",
+      "team_project_title": "Responsive and Adaptive Design: Mobile and Web Application Prototype",
+      "team_project_image": "/images/projects/p5.png",
+      "team_project_bg_image": "./images/projects/p1-bg.png",
+      "team_project_description": "Modern applications are used across multiple devices, making adaptable interfaces essential. Responsive design adjusts layouts based on screen size, while adaptive design uses specific layouts for different devices. Both improve usability, accessibility, and user experience.",
+      "team_project_type": "figma",
+      "team_project_link": "https://www.figma.com/proto/YxoZryY7Je3K9RteANLAKd/Louie-Dave-Ramilo-s-team-library?node-id=3324-2&p=f&t=AsHqmZiZwDOkwqDP-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=3324%3A2&show-proto-sidebar=1"
     }
-  ]
+  ],
+  "service": {
+    "header": "Engineering Ideas into Digital Experiences.",
+    "description": "At IVision, we transform ideas into innovative digital solutions through development, design, database management, and networking to help businesses build a stronger digital presence.",
+    "services": [
+      {
+        "id": "01",
+        "title": "Development",
+        "description": "Creating modern, scalable, and user-focused digital solutions that deliver smooth functionality, strong performance, and seamless user experiences across different platforms."
+      },
+      {
+        "id": "02",
+        "title": "Database Management",
+        "description": "Structuring and securing your most valuable data. We design efficient, organized database architectures that guarantee reliable performance, fast querying, and absolute data integrity."
+      },
+      {
+        "id": "03",
+        "title": "Design",
+        "description": "Crafting visually engaging web and graphic designs that combine creativity, usability, and modern aesthetics to build strong and memorable digital experiences."
+      },
+      {
+        "id": "04",
+        "title": "Networking",
+        "description": "Connecting systems through secure digital infrastructure. Our expertise spans network management, architecture design, and IP configuration to ensure stable and optimized environments."
+      }
+    ]
+  }
 }

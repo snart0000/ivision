@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import "../styles/navbar.scss";
+import ParticleBg from "./ParticleBg";
 
 import logo from "../assets/media/iv-logo.png";
 
@@ -95,6 +96,8 @@ const Navbar = () => {
         </button>
 
         <nav className={`navbar__menu ${isOpen ? "navbar__menu--open" : ""}`}>
+          <ParticleBg />
+         
           {navLinks.map((link) => (
             <button
               key={link.target}

@@ -2,6 +2,7 @@ import "../styles/home.scss";
 import homeVideo from "../assets/media/home-vid.mp4";
 import Cursor from "../components/Cursor";
 import Candle from "../components/Candle";
+// import BgMusic from "../components/BgMusic";
 
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
 
   return (
     <section className="home" id="home">
+      {/* <BgMusic /> */}
     <Cursor targetSelector=".home" />
     <Candle />
       <video className="home__video" autoPlay loop muted playsInline>

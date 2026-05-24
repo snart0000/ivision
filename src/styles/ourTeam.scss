@@ -12,12 +12,12 @@
     display: flex;
     align-items: center;
     padding: 0 20px;
-    background: #fff;
+    background: #111;
 
     h2 {
-      font-size: 18px;
+      font-size: 1rem;
       font-weight: 400;
-      color: #111;
+      color: $primary-text;
     }
   }
 
@@ -25,6 +25,13 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     height: calc(100vh - 70px);
+  }
+
+    &__footer {
+    position: relative;
+    padding: 38px 20px 42px;
+    background: #111;
+    overflow: hidden;
   }
 }
 
@@ -115,10 +122,10 @@
 
   &__full {
     position: absolute;
-    left: 50%;
-    bottom: 0;
-    height: 82%;
-    max-width: 90%;
+    left: 70%;
+    bottom: -20px;
+    height: 100%;
+    max-width: 100%;
     object-fit: contain;
     z-index: 3;
     opacity: 0;
@@ -165,6 +172,10 @@
     &__grid {
       grid-template-columns: 1fr;
     }
+
+    &__footer {
+      padding: 32px 16px 36px;
+    }
   }
 
   .team-card {
@@ -181,7 +192,7 @@
     }
 
     &__full {
-      height: 76%;
+      height: 100%;
     }
   }
 }
