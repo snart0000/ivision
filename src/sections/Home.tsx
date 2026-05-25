@@ -3,7 +3,7 @@ import "../styles/home.scss";
 import homeVideo from "../assets/media/home-vid.mp4";
 import Cursor from "../components/Cursor";
 import Candle from "../components/Candle";
-// import BgMusic from "../components/BgMusic";
+import BgMusic from "../components/BgMusic";
 
 const Home = () => {
   const brandRef = useRef<HTMLDivElement | null>(null);
@@ -35,7 +35,7 @@ const Home = () => {
 
   return (
     <section className="home" id="home">
-      {/* <BgMusic /> */}
+      <BgMusic />
       <Cursor targetSelector=".home" />
       <Candle />
 
