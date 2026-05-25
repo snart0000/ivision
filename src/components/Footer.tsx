@@ -1,9 +1,5 @@
 import "../styles/footer.scss";
 import logo from "../assets/media/iv-logo.png";
-import {
-  FaRegCircle,
-  // FaLinkedin,
-} from "react-icons/fa";
 import { FiFacebook, FiInstagram } from "react-icons/fi";
 import { TbBrandTiktok } from "react-icons/tb";
 import ParticleBg from "./ParticleBg";

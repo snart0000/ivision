@@ -12,9 +12,9 @@ type MainProfileProps = {
 
 const MainProfile = ({ profile }: MainProfileProps) => {
   const navigate = useNavigate();
-  const location = useLocation();
+  // const location = useLocation();
 
-  const handleName = profile.name.toLowerCase().replace(/\s+/g, "");
+  // const handleName = profile.name.toLowerCase().replace(/\s+/g, "");
 
   return (
     <section className="main-profile">

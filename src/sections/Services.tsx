@@ -70,7 +70,7 @@ const Services = () => {
           </div>
 
           <div className="services__cta">
-            <a onClick={() => scrollToSection("contact-us")}>GET IN TOUCH ↗</a>
+            <button onClick={() => scrollToSection("contact-us")}>GET IN TOUCH ↗</button>
           </div>
         </div>
       </div>

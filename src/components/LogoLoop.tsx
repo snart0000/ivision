@@ -210,7 +210,7 @@ const LogoLoop = memo(
           <ul
             className="logoloop__list"
             key={`copy-${copyIndex}`}
-            role="list"
+            role="listitem"
             aria-hidden={copyIndex > 0}
             ref={copyIndex === 0 ? seqRef : undefined}
           >
