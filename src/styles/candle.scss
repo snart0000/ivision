@@ -106,10 +106,16 @@
 }
 
 @media (max-width: 768px) {
+  .candles {
+    overflow: hidden;
+  }
+
   .candle {
+    transform: translateX(-50%);
+
     &__light {
-      top: 2%;
-      width: 26%;
+      top: -9%;
+      width: 80%;
     }
   }
 }

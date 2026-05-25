@@ -5,16 +5,21 @@
   width: 100%;
   min-height: 150px;
   padding: 1.2rem 2rem;
-  background: $primary-bg;
   color: $primary-text;
 
-  display: grid;
-  grid-template-columns: 1.2fr auto auto;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 5.2rem;
+  justify-content: center;
+  gap: 0.9rem;
+
   position: relative;
   overflow: hidden;
-
   font-family: "Neue Montreal";
 
   > *:not(.particles) {
@@ -30,10 +35,11 @@
   &__brand {
     display: flex;
     align-items: center;
-    gap: 1.4rem;
+    justify-content: center;
+    gap: 0.5rem;
 
     img {
-      width: 155px;
+      width: 45px;
       height: auto;
       display: block;
       object-fit: contain;
@@ -41,7 +47,7 @@
 
     h2 {
       margin: 0;
-      font-size: clamp(3rem, 5vw, 4.2rem);
+      font-size: 1.8rem;
       font-weight: 700;
       letter-spacing: -0.06em;
 
@@ -51,40 +57,41 @@
     }
   }
 
-  &__contact {
-    justify-self: end;
-
-    p {
-      margin: 0 0 0.3rem;
-      font-size: 0.95rem;
-      line-height: 1.2;
-      white-space: nowrap;
-    }
-  }
-
   &__right {
-    justify-self: start;
-    height: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 0.8rem;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 0.9rem;
   }
 
   &__socials {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 0.7rem;
 
     a {
+      width: 2rem;
+      height: 2rem;
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
       color: $primary-text;
-      font-size: 1.9rem;
+      font-size: 1rem;
       line-height: 1;
-      transition: color 0.3s ease;
+      transition: 0.3s ease;
+
+      svg {
+        display: block;
+      }
 
       &:hover {
-        color: $btn-color;
+        color: $primary-text;
+        border-color: $btn-color;
+        background: $btn-color;
+        transform: translateY(-3px);
       }
     }
   }
@@ -92,47 +99,6 @@
   &__copyright {
     margin: 0;
     font-size: 0.95rem;
-    padding-left: 0.1rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .footer {
-    padding: 2rem 1.4rem;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
     text-align: center;
-
-    &__brand {
-      justify-content: center;
-      flex-direction: column;
-      gap: 0.5rem;
-
-      img {
-        width: 125px;
-      }
-
-      h2 {
-        font-size: 3rem;
-      }
-    }
-
-    &__contact {
-      justify-self: center;
-
-      p {
-        white-space: normal;
-      }
-    }
-
-    &__right {
-      justify-self: center;
-      align-items: center;
-      gap: 1.2rem;
-    }
-
-    &__socials {
-      justify-content: center;
-    }
   }
 }

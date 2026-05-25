@@ -19,6 +19,7 @@ import { FaJava } from "react-icons/fa";
 import { TbBrandCpp } from "react-icons/tb";
 import { VscVscode } from "react-icons/vsc";
 import { TbBrandAdobePhotoshop } from "react-icons/tb";
+import { Link } from "react-router-dom";
 
 type TeamMember = {
   id: string;
@@ -89,9 +90,12 @@ const OurTeam = () => {
               className="team-card__full"
             />
 
-            <a href="/" className="team-card__btn">
+            <Link 
+            to={`/profile/${member.id}`} 
+            state={{ fromOurTeam: true }}
+            className="team-card__btn">
               LEARN MORE ↗
-            </a>
+            </Link>
           </div>
         ))}
       </div>

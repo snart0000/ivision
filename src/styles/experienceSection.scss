@@ -1,0 +1,116 @@
+@use "./variables" as *;
+@use "./fonts" as *;
+
+.experience-section {
+  min-height: 20vh;
+  padding: 3rem 6rem 3rem 6rem;
+  background: $primary-text;
+  color: $primary-text;
+  font-family: "Neue Montreal", sans-serif;
+
+  &__header {
+    margin-bottom: 3rem;
+
+    p {
+      color: $primary-bg;
+      font-size: 0.85rem;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      margin-bottom: 0.6rem;
+    }
+  }
+
+  &__timeline {
+    display: grid;
+    gap: 1.2rem;
+    position: relative;
+  }
+}
+
+.experience-card {
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  gap: 2rem;
+  padding: 1.5rem;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.22);
+  transition: transform 0.25s ease, border-color 0.25s ease,
+    background 0.25s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    border-color: var(--profile-color);
+    background: rgba(255, 255, 255, 0.09);
+    box-shadow:
+        0 18px 45px rgba(0, 0, 0, 0.22),
+        0 0 22px color-mix(in srgb, var(--profile-color) 55%, transparent);
+}
+
+  &__year {
+    width: fit-content;
+    height: fit-content;
+    padding: 0.55rem 0.9rem;
+    border-radius: 999px;
+    color: $primary-bg;
+    font-size: 0.78rem;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    line-height: 1;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: $primary-bg;
+  }
+
+  h4 {
+    margin-top: 0.45rem;
+    color: rgba($primary-bg, 0.8);
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  ul {
+    margin-top: 1rem;
+    padding-left: 1rem;
+    display: grid;
+    gap: 0.45rem;
+
+    li {
+      color: $primary-bg;
+      font-size: 0.95rem;
+      line-height: 1.45;
+
+      &::marker {
+        color: $primary-bg;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .experience-section {
+    padding: 1.5rem;
+
+    &__header {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .experience-card {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1.2rem;
+
+     &__year {
+    padding: 0;
+  }
+
+  }
+}

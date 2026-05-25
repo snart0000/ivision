@@ -206,6 +206,21 @@
   cursor: not-allowed;
 }
 
+.form-group.has-error .form-input {
+  border-color: #ff7b7b;
+  box-shadow: 0 0 0 1px rgba(255, 95, 95, 0.25);
+}
+
+.form-group.has-error label {
+  color: #ff7b7b;
+}
+
+.form-group small {
+  color: #ff7b7b;
+  font-size: 0.75rem;
+  margin-top: 2px;
+}
+
 @media (max-width: 900px) {
   .contact-us {
     &__wrapper {

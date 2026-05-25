@@ -1,7 +1,7 @@
+import { useEffect, useRef, useState } from "react";
 import "../styles/about.scss";
 import aboutBg from "../assets/media/about-bg.png";
 import iVisionLogo from "../assets/media/iv-logo.png";
-// import GhostCursor from "../components/GhostCursor";
 
 const skills = [
   "REACT",
@@ -18,29 +18,33 @@ const skills = [
 ];
 
 const AboutUs = () => {
+  const aboutRef = useRef<HTMLElement | null>(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const section = aboutRef.current;
+    if (!section) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsVisible(entry.isIntersecting);
+      },
+      { threshold: 0.35 }
+    );
+
+    observer.observe(section);
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section
-      className="about-us"
+      ref={aboutRef}
+      className={`about-us ${isVisible ? "about-us--show" : ""}`}
       id="about-us"
       style={{ backgroundImage: `url(${aboutBg})` }}
     >
       <div className="about-us__overlay">
-
-        {/* <GhostCursor
-          color="#ebebeb"
-          brightness={1}
-          edgeIntensity={0}
-          trailLength={50}
-          inertia={0.5}
-          grainIntensity={0.05}
-          bloomStrength={0.1}
-          bloomRadius={1}
-          bloomThreshold={0.025}
-          fadeDelayMs={1000}
-          fadeDurationMs={1500}
-          zIndex={1}
-        /> */}
-
         <div className="about-us__content">
           <div className="about-us__text">
             <span>About Us</span>
@@ -68,12 +72,12 @@ const AboutUs = () => {
       </div>
 
       <div className="about-us__skills">
-      <div className="about-us__skills-track">
-        {[...skills, ...skills, ...skills, ...skills].map((skill, index) => (
-          <span key={index}>{skill}</span>
-        ))}
+        <div className="about-us__skills-track">
+          {[...skills, ...skills, ...skills, ...skills].map((skill, index) => (
+            <span key={index}>{skill}</span>
+          ))}
+        </div>
       </div>
-    </div>
     </section>
   );
 };

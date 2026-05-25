@@ -2,16 +2,16 @@
   "details": [
     {
       "id": "01",
-      "profile_image": "",
-      "face_image": "./images/jhay-face.png",
-      "full_image": "./images/jhay-full.png",
+      "profile_image": "/images/jhay-prof.png",
+      "face_image": "/images/jhay-face.png",
+      "full_image": "/images/jhay-full.png",
       "color": "#64120d",   
-      "cv": "",
+      "cv": "/resume/jhay-cv.pdf",
       "name": "Romeo Torrijos",
       "role": "Designer",
       "bio": "Motivated and detail-oriented Information Technology student seeking an entry-level opportunity where I can apply my skills in graphic design, web design, and UI/UX tools such as Figma and Canva. Passionate about creating visually appealing and user-friendly digital experiences, with a strong foundation in both technical and creative problem-solving. Eager to contribute creativity, leadership experience, and strong communication skills in a collaborative team environment while continuously learning and growing in the field of technology and design.",
-      "completed_projects": "",
-      "customer_satisfaction": "100%",
+      "completed_projects": "5",
+      "experience": "1",
       "facebook": "https://www.facebook.com/heyy.jude3ee",
       "instagram": "https://www.instagram.com/jude.v1bes/",
       "linkedin": "https://www.linkedin.com/in/romeo-torrijos-a0ba333a7/",
@@ -44,22 +44,39 @@
       ],
       "projects": [
         {
-          "project_title": "",
-          "project_image": "",
-          "type": "website",
-          "link": ""
-        },
-        {
-          "project_title": "",
-          "project_image": "",
+          "id": "1001",
+          "project_title": "Recreating the Homepage: A UI Imitation Study in Figma",
+          "project_image": "/images/projects/t1.png",
           "type": "figma",
-          "link": ""
+          "link": "https://www.figma.com/proto/7QEocFIqD8f5HPXGi9FMUl/ITEC-101_Poblete-Ramilo-Tan-Torrijos_ChatGPT?node-id=2-4&t=JSBDeL1ej41kdLPs-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1"
         },
         {
-          "project_title": "",
-          "project_image": "",
-          "type": "image",
-          "link": null
+          "id": "1002",
+          "project_title": "Usability Evaluation and UI Improvement",
+          "project_image": "/images/projects/t2.png",
+          "type": "figma",
+          "link": "https://www.figma.com/proto/E0Y2fupGdDLljM7sbLjoxP/ITEC-101--LAB-2?node-id=1-2&p=f&t=ts599BwTGWpbVYUq-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1"
+        },
+        {
+          "id": "1003",
+          "project_title": "Google’s Material 3 Design Mobile App Prototype",
+          "project_image": "/images/projects/t3.png",
+          "type": "figma",
+          "link": "https://www.figma.com/proto/jhkpBeflDegvlUy4N5XRrz/ITEC-101--LAB-3?node-id=1-2&p=f&t=P3oYg0CwCpQm0yqf-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2"
+        },
+         {
+          "id": "1004",
+          "project_title": "Multi-Step Mobile Authentication",
+          "project_image": "/images/projects/t4.png",
+          "type": "figma",
+          "link": "https://www.figma.com/proto/2ih19bvgk6wjRAxpozaQwF/LAB-4?node-id=1-2&p=f&t=n6rjtKhfz1vDcQ2o-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2"
+        },
+         {
+          "id": "1005",
+          "project_title": "Responsive and Adaptive Design: Mobile and Web Application Prototype",
+          "project_image": "/images/projects/t5.png",
+          "type": "figma",
+          "link": "https://www.figma.com/proto/YxoZryY7Je3K9RteANLAKd/Louie-Dave-Ramilo-s-team-library?node-id=3324-2&p=f&t=AsHqmZiZwDOkwqDP-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=3324%3A2&show-proto-sidebar=1"
         }
       ],
       "work": [
@@ -100,17 +117,17 @@
     }, 
     {
       "id": "02",
-      "profile_image": "",
-      "face_image": "./images/ld-face.png",
-      "full_image": "./images/ld-full.png",
+      "profile_image": "/images/ld-prof.png",
+      "face_image": "/images/ld-face.png",
+      "full_image": "/images/ld-full.png",
       "color": "#31751f", 
-      "cv": "",
-      "name": "Louie Dave Ramillo",
+      "cv": "/resume/ld-cv.pdf",
+      "name": "Louie Dave Ramilo",
       "role": "Back-end Programmer",
-      "bio": "",
-      "completed_projects": "",
-      "customer_satisfaction": "",
-      "facebook": "https://web.facebook.com/louiedave248",
+      "bio": "Results-driven full-stack developer with hands-on experience in the Laravel framework, React using Inertia.js, and MySQL database management. Skilled in building web applications, debugging systems, API integration, and designing database schemas. Strong background in leadership and event management as the Vice President of the Information and Communication Technology Student Organization (ICTSO). Passionate about delivering efficient digital solutions with a growing interest in cybersecurity and penetration testing. ",
+      "completed_projects": "5",
+      "experience": "1",
+      "facebook": "https://www.facebook.com/louiedave248",
       "instagram": "https://www.instagram.com/shingshangsh/",
       "linkedin": "",
       "github": "https://github.com/louieramilo0101",
@@ -142,58 +159,75 @@
       ],
       "projects": [
         {
-          "project_title": "",
-          "project_image": "",
-          "type": "website",
-          "link": ""
-        },
-        {
-          "project_title": "",
-          "project_image": "",
+          "id": "2001",
+          "project_title": "Recreating the Homepage: A UI Imitation Study in Figma",
+          "project_image": "/images/projects/t1.png",
           "type": "figma",
-          "link": ""
+          "link": "https://www.figma.com/proto/7QEocFIqD8f5HPXGi9FMUl/ITEC-101_Poblete-Ramilo-Tan-Torrijos_ChatGPT?node-id=2-4&t=JSBDeL1ej41kdLPs-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1"
         },
         {
-          "project_title": "",
-          "project_image": "",
-          "type": "image",
-          "link": null
+          "id": "2002",
+          "project_title": "Usability Evaluation and UI Improvement",
+          "project_image": "/images/projects/t2.png",
+          "type": "figma",
+          "link": "https://www.figma.com/proto/E0Y2fupGdDLljM7sbLjoxP/ITEC-101--LAB-2?node-id=1-2&p=f&t=ts599BwTGWpbVYUq-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1"
+        },
+        {
+          "id": "2003",
+          "project_title": "Google’s Material 3 Design Mobile App Prototype",
+          "project_image": "/images/projects/t3.png",
+          "type": "figma",
+          "link": "https://www.figma.com/proto/jhkpBeflDegvlUy4N5XRrz/ITEC-101--LAB-3?node-id=1-2&p=f&t=P3oYg0CwCpQm0yqf-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2"
+        },
+         {
+          "id": "2004",
+          "project_title": "Multi-Step Mobile Authentication",
+          "project_image": "/images/projects/t4.png",
+          "type": "figma",
+          "link": "https://www.figma.com/proto/2ih19bvgk6wjRAxpozaQwF/LAB-4?node-id=1-2&p=f&t=n6rjtKhfz1vDcQ2o-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2"
+        },
+         {
+          "id": "2005",
+          "project_title": "Responsive and Adaptive Design: Mobile and Web Application Prototype",
+          "project_image": "/images/projects/t5.png",
+          "type": "figma",
+          "link": "https://www.figma.com/proto/YxoZryY7Je3K9RteANLAKd/Louie-Dave-Ramilo-s-team-library?node-id=3324-2&p=f&t=AsHqmZiZwDOkwqDP-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=3324%3A2&show-proto-sidebar=1"
         }
       ],
       "work": [
         {
-          "job_title": "",
-          "employer": "",
-          "task": ["", ""],
+          "job_title": "ADMINISTRATOR & MODERATOR ",
+          "employer": "Himig Para Kay YHWH",
+          "task": ["Manage community interactions, moderate discussions, and oversee administrative duties for the group", ""],
           "start_month": "",
-          "start_year": "",
+          "start_year": "Present",
           "end_month": "",
           "end_year": ""
         }
       ],
       "acads": [
         {
-          "program": "",
-          "school": "",
-          "year_end": "",
-          "academic_achievement": ["", ""],
-          "leadership": ["", ""]
+          "program": "Bachelor of Science in Information Technology ",
+          "school": "CAVITE STATE UNIVERSITY – NAIC CAMPUS ",
+          "year_end": "Present",
+          "academic_achievement": ["Consecutive President's Lister", "Programmer of Casptone Project 'CiviCORE'", "Participant in the Ode to Code backend programming competition", "Attendee at the 'Protecting Innovations in the Digital Age: A Technology Patent Drafting' workshop"],
+          "leadership": ["Vice-President of the Information and Communication Technology Student Organization (ICTSO) A.Y. 2025-2026", ""]
         }
       ]
     },
     {
       "id": "03",
-      "profile_image": "",
-      "face_image": "./images/eli-face.png",
-      "full_image": "./images/eli-full.png",
+      "profile_image": "/images/eli-prof.png",
+      "face_image": "/images/eli-face.png",
+      "full_image": "/images/eli-full.png",
       "color": "#003d63",      
-      "cv": "",
+      "cv": "/resume/eli-cv.pdf",
       "name": "Elijah Poblete",
       "role": "Database Manager",
       "bio": "Highly motivated Full-Stack Developer and IT student with a proven track record of building responsive web applications using React.js, Node.js, and relational databases. A consistent President’s Lister and former Vice President of Student Government, I excel at leading complex technical initiatives like CiviCORE while managing organizational governance and cross-functional teams. I am dedicated to leveraging my technical expertise and leadership experience to deliver efficient, user-centered digital solutions.",
-      "completed_projects": "",
-      "customer_satisfaction": "100%",
-      "facebook": "www.facebook.com/elijah.poblete",
+      "completed_projects": "5",
+      "experience": "1",
+      "facebook": "https://www.facebook.com/elijah.poblete",
       "instagram": "https://www.instagram.com/pobleteelijah/",
       "linkedin": "https://www.linkedin.com/in/elijah-poblete-a22830355/",
       "github": "https://github.com/ElijahPoblete/ElijahPoblete",
@@ -225,22 +259,39 @@
       ],
       "projects": [
         {
-          "project_title": "",
-          "project_image": "",
-          "type": "website",
-          "link": ""
-        },
-        {
-          "project_title": "",
-          "project_image": "",
+          "id": "3001",
+          "project_title": "Recreating the Homepage: A UI Imitation Study in Figma",
+          "project_image": "/images/projects/t1.png",
           "type": "figma",
-          "link": ""
+          "link": "https://www.figma.com/proto/7QEocFIqD8f5HPXGi9FMUl/ITEC-101_Poblete-Ramilo-Tan-Torrijos_ChatGPT?node-id=2-4&t=JSBDeL1ej41kdLPs-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1"
         },
         {
-          "project_title": "",
-          "project_image": "",
-          "type": "image",
-          "link": null
+          "id": "3002",
+          "project_title": "Usability Evaluation and UI Improvement",
+          "project_image": "/images/projects/t2.png",
+          "type": "figma",
+          "link": "https://www.figma.com/proto/E0Y2fupGdDLljM7sbLjoxP/ITEC-101--LAB-2?node-id=1-2&p=f&t=ts599BwTGWpbVYUq-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1"
+        },
+        {
+          "id": "3003",
+          "project_title": "Google’s Material 3 Design Mobile App Prototype",
+          "project_image": "/images/projects/t3.png",
+          "type": "figma",
+          "link": "https://www.figma.com/proto/jhkpBeflDegvlUy4N5XRrz/ITEC-101--LAB-3?node-id=1-2&p=f&t=P3oYg0CwCpQm0yqf-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2"
+        },
+         {
+          "id": "3004",
+          "project_title": "Multi-Step Mobile Authentication",
+          "project_image": "/images/projects/t4.png",
+          "type": "figma",
+          "link": "https://www.figma.com/proto/2ih19bvgk6wjRAxpozaQwF/LAB-4?node-id=1-2&p=f&t=n6rjtKhfz1vDcQ2o-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2"
+        },
+         {
+          "id": "3005",
+          "project_title": "Responsive and Adaptive Design: Mobile and Web Application Prototype",
+          "project_image": "/images/projects/t5.png",
+          "type": "figma",
+          "link": "https://www.figma.com/proto/YxoZryY7Je3K9RteANLAKd/Louie-Dave-Ramilo-s-team-library?node-id=3324-2&p=f&t=AsHqmZiZwDOkwqDP-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=3324%3A2&show-proto-sidebar=1"
         }
       ],
       "work": [
@@ -257,7 +308,7 @@
           "job_title": "Free Lancer",
           "employer": "Commisioned",
           "task": ["Video Editing", "Photo Editing", "Graphic Design", "Microsoft Tools"],
-          "start_month": "",
+          "start_month": "January",
           "start_year": "2023",
           "end_month": "",
           "end_year": "Present"
@@ -267,14 +318,14 @@
         {
           "program": "Bachelor of Science in Information Technology",
           "school": "Cavite State University - Naic Campus", 
-          "year_end": "2027",
+          "year_end": "Present",
           "academic_achievement": ["Dean's Lister (2023)", "President's Lister (2024 to Present)", "3x3 Programming Contest 1st Placer"],
           "leadership": ["Photojournalist A.Y. 2022-2024", "Technical Staff of Seminar's", "Vice President A.Y. 2024-2025", "Proponent of Quench5 Project (Income Generating Project of the Central Student Government)"]
         },
         {
           "program": "COMTECH Educational Development Program",
           "school": "DATACOM - Institute of Computer Technology", 
-          "year_end": "",
+          "year_end": "2023",
           "academic_achievement": [""],
           "leadership": [""]
         }
@@ -282,20 +333,20 @@
     },
     {
       "id": "04",
-      "profile_image": "",
-      "face_image": "./images/albert-face.png",
-      "full_image": "./images/albert-full.png",
+      "profile_image": "/images/albert-prof.png",
+      "face_image": "/images/albert-face.png",
+      "full_image": "/images/albert-full.png",
       "color": "#726255", 
-      "cv": "",
+      "cv": "/resume/albert-cv.pdf",
       "name": "Albert Tan",
       "role": "UI/UX Programmer",
       "bio": "Results-driven Web Developer with hands-on experience in full-stack development using React.js and Node.js. Skilled in building responsive web applications, debugging systems, and optimizing performance. Strong background in leadership and project management through academic and professional experience. Passionate about delivering efficient, user-centered digital solutions.",
-      "completed_projects": "",
-      "customer_satisfaction": "100%",
-      "facebook": "www.facebook.com/abtttan/",
+      "completed_projects": "10",
+      "experience": "2",
+      "facebook": "https://www.facebook.com/abtttan/",
       "instagram": "http://instagram.com/atan.dev/?hl=en",
       "linkedin": "https://www.linkedin.com/in/alberttan18/",
-      "github": "",
+      "github": "https://github.com/snart0000",
       "skills": [
         {
           "title": "Frontend Development",
@@ -311,44 +362,69 @@
         },
         {
           "title": "Backend Development",
-          "percentage": "100%"
+          "percentage": "70%"
         },
         {
           "title": "Database Design and Management",
-          "percentage": "100%"
+          "percentage": "50%"
         },
         {
           "title": "Network Security",
-          "percentage": "100%"
+          "percentage": "80%"
         }
       ],
       "projects": [
         {
-          "project_title": "",
-          "project_image": "",
+          "id": "4001",
+          "project_title": "Gottit",
+          "project_image": "/images/projects/a1.png",
           "type": "website",
-          "link": ""
+          "link": "https://gottit.io/"
         },
         {
-          "project_title": "",
-          "project_image": "",
-          "type": "figma",
-          "link": ""
+          "id": "4002",
+          "project_title": "Aplic PH 2027",
+          "project_image": "/images/projects/a4.png",
+          "type": "website",
+          "link": "https://aplic2027.com/"
         },
         {
-          "project_title": "",
-          "project_image": "",
+          "id": "4003",
+          "project_title": "Pullox Tech",
+          "project_image": "/images/projects/a5.png",
+          "type": "website",
+          "link": "https://polluxtech.io/"
+        },
+        {
+          "id": "4004",
+          "project_title": "House of Wine & Liquor Poster",
+          "project_image": "/images/projects/a6.png",
+          "type": "image",
+          "link": null
+        },
+        {
+          "id": "4005",
+          "project_title": "Bourbon Tasting Poster",
+          "project_image": "/images/projects/a7.png",
+          "type": "image",
+          "link": null
+        },
+        {
+          "id": "4006",
+          "project_title": "Tasting Poster",
+          "project_image": "/images/projects/a3.png",
           "type": "image",
           "link": null
         }
+        
       ],
       "work": [
         {
           "job_title": "JUNIOR WEB DEVELOPER ",
           "employer": "Tritonica Group LTD",
-          "task": ["Development of web applications", "Maintenance of web applications", "Debugging", "Troubleshooting", "Responsive web Development", "Responsive web "],
+          "task": ["Developed and maintained web applications using React.js and Node.js", "Wrote clean, scalable, and efficient code for frontend and backend systems", "Implemented new features and resolved bugs to improve system performance", "Analyzed logs and error messages to troubleshoot and fix software issues", "Designed and developed responsive websites for improved user experience"],
           "start_month": "March",
-          "start_year": "202",
+          "start_year": "2024",
           "end_month": "",
           "end_year": "Present"
         }
@@ -357,27 +433,26 @@
         {
           "program": "Bachelor of Science in Information Technology",
           "school": "CAVITE STATE UNIVERSITY - NAIC CAMPUS",
-          "year_end": "2026",
-          "academic_achievement": ["", ""],
+          "year_end": "2024-2026",
+          "academic_achievement": ["2nd Place Research Poster Presentation at Student Research Congress by RDES", "3rd Place 3MT Research Presentation at Student Research Congress by RDES"],
           "leadership": ["Project Manager and Programmer of Capstone Project entitled “Integrated License Appointment System: Streamlining Application Verification and Scheduling for Land Transportation Office”", ""]
         },
         {
           "program": "Diploma in Information and Communication Technology ",
           "school": "POLYTECHNIC UNIVERSITY OF THE PHILIPPINES - MARAGONDON CAMPUS",
           "year_end": "2020-2023",
-          "academic_achievement": ["President's Lister (2020-2023)", "Outstanding DICT Student Awardee", "", ""],
+          "academic_achievement": ["President's Lister (2020-2023)", "Outstanding DICT Student Awardee", "Highest GWA in DICT Program (2021-2022)"],
           "leadership": ["Project Manager and Front-End Developer of Capstone Project entitled “Laboratory Inventory System for PUPMB Laboratory Office”", "Team Leader - Area IX for Level II Accreditation of PUPMC", "President of Association of Technology Students A.Y. 2022-2023", "Business Manager of Association of Technology Students A.Y. 2021-2022", "Moonton Student Leader (2022-2023)"]
         }
       ]
     }
-    
   ],
   "team_project": [
     {
       "project_id": "1",
       "team_project_title": "Recreating the Homepage: A UI Imitation Study in Figma",
       "team_project_image": "/images/projects/p1.png",
-      "team_project_bg_image": "./images/projects/p2-bg.png",
+      "team_project_bg_image": "/images/projects/p2-bg.png",
       "team_project_description": "One of the best ways to improve UI design skills is by studying and recreating existing interfaces. Rebuilding a homepage in Figma helps you understand important design decisions such as spacing, navigation structure, call-to-action placement, and visual hierarchy.",
       "team_project_type": "figma",
       "team_project_link": "https://www.figma.com/proto/7QEocFIqD8f5HPXGi9FMUl/ITEC-101_Poblete-Ramilo-Tan-Torrijos_ChatGPT?node-id=2-4&t=JSBDeL1ej41kdLPs-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1"

@@ -14,9 +14,9 @@ const navLinks = [
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("");
   const location = useLocation();
   const navigate = useNavigate();
-  const [activeSection, setActiveSection] = useState("home");
 
   const scrollToSection = (id: string) => {
     const section = document.getElementById(id);
@@ -48,39 +48,44 @@ const Navbar = () => {
   }, [location]);
 
   useEffect(() => {
-  const handleScroll = () => {
-    const sections = navLinks
-      .map((link) => document.getElementById(link.target))
-      .filter(Boolean) as HTMLElement[];
-
-    let currentSection = "home";
-
-    sections.forEach((section) => {
-      const sectionTop = section.offsetTop - 120;
-
-      if (window.scrollY >= sectionTop) {
-        currentSection = section.id;
+    const handleScroll = () => {
+      if (location.pathname !== "/") {
+        setActiveSection("");
+        return;
       }
-    });
 
-    setActiveSection(currentSection);
-  };
+      const sections = navLinks
+        .map((link) => document.getElementById(link.target))
+        .filter(Boolean) as HTMLElement[];
 
-  handleScroll();
-  window.addEventListener("scroll", handleScroll);
+      let currentSection = "";
 
-  return () => window.removeEventListener("scroll", handleScroll);
-}, []);
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop - 120;
+
+        if (window.scrollY >= sectionTop) {
+          currentSection = section.id;
+        }
+      });
+
+      setActiveSection(currentSection);
+    };
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [location.pathname]);
 
   useEffect(() => {
     if (isOpen) {
-        document.body.style.overflow = "hidden";
+      document.body.style.overflow = "hidden";
     } else {
-        document.body.style.overflow = "";
+      document.body.style.overflow = "";
     }
 
     return () => {
-        document.body.style.overflow = "";
+      document.body.style.overflow = "";
     };
   }, [isOpen]);
 
@@ -97,15 +102,12 @@ const Navbar = () => {
 
         <nav className={`navbar__menu ${isOpen ? "navbar__menu--open" : ""}`}>
           <ParticleBg />
-         
+
           {navLinks.map((link) => (
             <button
               key={link.target}
-              // className="navbar__link"
               className={`navbar__link ${
-                activeSection === link.target
-                  ? "navbar__link--active"
-                  : ""
+                activeSection === link.target ? "navbar__link--active" : ""
               }`}
               onClick={() => handleNavClick(link.target)}
             >

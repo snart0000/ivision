@@ -30,11 +30,26 @@
   &__text {
     max-width: 620px;
 
+    span,
+    h2,
+    p {
+      opacity: 0;
+      will-change: transform, opacity, filter;
+    }
+
     span {
       display: block;
       font-size: 1rem;
       font-weight: 700;
       margin-bottom: 18px;
+
+      transform: translateX(-35px);
+      filter: blur(6px);
+
+      transition:
+        opacity 0.75s ease,
+        transform 0.75s ease,
+        filter 0.75s ease;
     }
 
     h2 {
@@ -42,6 +57,14 @@
       line-height: 1;
       font-weight: 700;
       margin-bottom: 18px;
+
+      transform: translateY(45px) scale(0.94);
+      filter: blur(8px);
+
+      transition:
+        opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.15s,
+        transform 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.15s,
+        filter 0.9s ease 0.15s;
     }
 
     p {
@@ -49,6 +72,23 @@
       line-height: 1.45;
       margin-bottom: 28px;
       color: rgba(235, 235, 235, 0.9);
+
+      transform: translateY(35px);
+      filter: blur(7px);
+
+      transition:
+        opacity 0.85s ease 0.3s,
+        transform 0.85s ease 0.3s,
+        filter 0.85s ease 0.3s;
+
+      &:last-child {
+        transform: translateX(45px);
+
+        transition:
+          opacity 0.85s ease 0.45s,
+          transform 0.85s ease 0.45s,
+          filter 0.85s ease 0.45s;
+      }
     }
   }
 
@@ -56,6 +96,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    opacity: 0;
+    transform: translateX(70px) rotate(8deg) scale(0.85);
+    filter: blur(10px);
+
+    transition:
+      opacity 1s cubic-bezier(0.22, 1, 0.36, 1) 0.35s,
+      transform 1s cubic-bezier(0.22, 1, 0.36, 1) 0.35s,
+      filter 1s ease 0.35s;
 
     img {
       width: min(360px, 80%);
@@ -72,32 +121,51 @@
     overflow: hidden;
     backdrop-filter: blur(2px);
 
-      &:hover .about-us__skills-track {
+    &:hover .about-us__skills-track {
       animation-play-state: paused;
     }
-
   }
 
   &__skills-track {
-      display: flex;
-      align-items: center;
-      width: max-content;
-      animation: loopSkills 35s linear infinite;
-      will-change: transform;
+    display: flex;
+    align-items: center;
+    width: max-content;
+    animation: loopSkills 35s linear infinite;
+    will-change: transform;
 
-      span {
+    span {
       white-space: nowrap;
       font-size: 0.95rem;
       font-weight: 700;
       margin-right: 58px;
       color: $primary-text;
-      transition: transform 0.25s ease, opacity 0.25s ease;
+      transition:
+        transform 0.25s ease,
+        opacity 0.25s ease;
       cursor: default;
 
       &:hover {
         transform: scale(1.18);
         opacity: 1;
       }
+    }
+  }
+
+  &--show {
+    .about-us__text {
+      span,
+      h2,
+      p {
+        opacity: 1;
+        transform: translate(0, 0) scale(1);
+        filter: blur(0);
+      }
+    }
+
+    .about-us__logo {
+      opacity: 1;
+      transform: translateX(0) rotate(0) scale(1);
+      filter: blur(0);
     }
   }
 }
@@ -149,13 +217,13 @@
       height: 90px;
     }
 
-    &__skills-track {
-      animation-duration: 16s;
+    // &__skills-track {
+    //   animation-duration: 16s;
 
-      span {
-        font-size: 0.8rem;
-        margin-right: 38px;
-      }
-    }
+    //   span {
+    //     font-size: 0.8rem;
+    //     margin-right: 38px;
+    //   }
+    // }
   }
 }
