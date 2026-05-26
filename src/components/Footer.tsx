@@ -20,7 +20,7 @@ const Footer = () => {
       <div className="footer__right">
         <div className="footer__socials">
           <a
-            href="https://facebook.com"
+            href="https://www.facebook.com/profile.php?id=61590330754287"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Facebook"
@@ -29,7 +29,7 @@ const Footer = () => {
           </a>
 
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/ivision.0426/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
