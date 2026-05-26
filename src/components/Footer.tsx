@@ -38,7 +38,7 @@ const Footer = () => {
           </a>
 
           <a
-            href="https://tiktok.com"
+            href="https://www.tiktok.com/@ivision27"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="TikTok"
