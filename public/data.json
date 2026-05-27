@@ -210,8 +210,8 @@
           "program": "Bachelor of Science in Information Technology ",
           "school": "CAVITE STATE UNIVERSITY – NAIC CAMPUS ",
           "year_end": "Present",
-          "academic_achievement": ["Consecutive President's Lister", "Programmer of Casptone Project 'CiviCORE'", "Participant in the Ode to Code backend programming competition", "Attendee at the 'Protecting Innovations in the Digital Age: A Technology Patent Drafting' workshop"],
-          "leadership": ["Vice-President of the Information and Communication Technology Student Organization (ICTSO) A.Y. 2025-2026", ""]
+          "academic_achievement": ["Consecutive President's Lister", "Programmer of Casptone Project 'CiviCORE'", "Participant in the Ode to Code backend programming competition", "Participant  in the 'Protecting Innovations in the Digital Age: A Technology Patent Drafting' workshop"],
+          "leadership": ["Vice President of the Information and Communication Technology Student Organization (ICTSO) A.Y. 2025-2026", ""]
         }
       ]
     },
@@ -296,12 +296,12 @@
       ],
       "work": [
         {
-          "job_title": "DESO Technical Suppoer",
+          "job_title": "DESO Technical Support",
           "employer": "COMELEC",
           "task": ["Coordinator", "Problem Solving", "Debugging"],
           "start_month": "May",
           "start_year": "2024",
-          "end_month": "may",
+          "end_month": "May",
           "end_year": "2024"
         },
         {
@@ -320,7 +320,7 @@
           "school": "Cavite State University - Naic Campus", 
           "year_end": "Present",
           "academic_achievement": ["Dean's Lister (2023)", "President's Lister (2024 to Present)", "3x3 Programming Contest 1st Placer"],
-          "leadership": ["Photojournalist A.Y. 2022-2024", "Technical Staff of Seminar's", "Vice President A.Y. 2024-2025", "Proponent of Quench5 Project (Income Generating Project of the Central Student Government)"]
+          "leadership": ["Photojournalist A.Y. 2022-2025", "Technical Staff of Seminars", "Vice President A.Y. 2024-2025", "Proponent of Quench5 Project (Income Generating Project of the Central Student Government)"]
         },
         {
           "program": "COMTECH Educational Development Program",
