@@ -19,27 +19,27 @@
       "skills": [
         {
           "title": "Frontend Development",
-          "percentage": "90%"
+          "percentage": "80%"
         },
         {
           "title": "UI/UX Design",
-          "percentage": "100%"
+          "percentage": "90%"
         },
         {
           "title": "API Integration",
-          "percentage": "100%"
+          "percentage": "60%"
         },
         {
           "title": "Backend Development",
-          "percentage": "80&"
+          "percentage": "60&"
         },
         {
           "title": "Database Design and Management",
-          "percentage": "100%"
+          "percentage": "50%"
         },
         {
           "title": "Network Security",
-          "percentage": "100%"
+          "percentage": "70%"
         }
       ],
       "projects": [
@@ -138,15 +138,15 @@
         },
         {
           "title": "UI/UX Design",
-          "percentage": "100%"
+          "percentage": "80%"
         },
         {
           "title": "API Integration",
-          "percentage": "100%"
+          "percentage": "90%"
         },
         {
           "title": "Backend Development",
-          "percentage": "80&"
+          "percentage": "100&"
         },
         {
           "title": "Database Design and Management",
@@ -154,7 +154,7 @@
         },
         {
           "title": "Network Security",
-          "percentage": "100%"
+          "percentage": "80%"
         }
       ],
       "projects": [
@@ -238,7 +238,7 @@
         },
         {
           "title": "UI/UX Design",
-          "percentage": "100%"
+          "percentage": "80%"
         },
         {
           "title": "API Integration",
@@ -246,7 +246,7 @@
         },
         {
           "title": "Backend Development",
-          "percentage": "80&"
+          "percentage": "80%"
         },
         {
           "title": "Database Design and Management",
@@ -358,7 +358,7 @@
         },
         {
           "title": "API Integration",
-          "percentage": "100%"
+          "percentage": "90%"
         },
         {
           "title": "Backend Development",
@@ -366,7 +366,7 @@
         },
         {
           "title": "Database Design and Management",
-          "percentage": "50%"
+          "percentage": "60%"
         },
         {
           "title": "Network Security",

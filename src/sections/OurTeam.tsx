@@ -94,7 +94,7 @@ const OurTeam = () => {
             to={`/profile/${member.id}`} 
             state={{ fromOurTeam: true }}
             className="team-card__btn">
-              LEARN MORE ↗
+              See Profile ↗
             </Link>
           </div>
         ))}
