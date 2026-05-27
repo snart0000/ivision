@@ -27,11 +27,11 @@
         },
         {
           "title": "API Integration",
-          "percentage": "60%"
+          "percentage": "50%"
         },
         {
           "title": "Backend Development",
-          "percentage": "60&"
+          "percentage": "50%"
         },
         {
           "title": "Database Design and Management",
@@ -134,7 +134,7 @@
       "skills": [
        {
           "title": "Frontend Development",
-          "percentage": "90%"
+          "percentage": "80%"
         },
         {
           "title": "UI/UX Design",
@@ -142,19 +142,19 @@
         },
         {
           "title": "API Integration",
-          "percentage": "90%"
+          "percentage": "70%"
         },
         {
           "title": "Backend Development",
-          "percentage": "100&"
+          "percentage": "80%"
         },
         {
           "title": "Database Design and Management",
-          "percentage": "100%"
+          "percentage": "80%"
         },
         {
           "title": "Network Security",
-          "percentage": "80%"
+          "percentage": "60%"
         }
       ],
       "projects": [
@@ -242,7 +242,7 @@
         },
         {
           "title": "API Integration",
-          "percentage": "100%"
+          "percentage": "90%"
         },
         {
           "title": "Backend Development",
