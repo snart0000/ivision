@@ -90,8 +90,8 @@
           "end_year": "Present"
         },
         {
-          "job_title": "Free Lancer",
-          "employer": "Commisioned",
+          "job_title": "Freelancer",
+          "employer": "Commissioned",
           "task": ["Video Editing", "Photo Editing", "Graphic Design", "Foundational Microsoft Tools"],
           "start_month": "October",
           "start_year": "2022",
@@ -305,8 +305,8 @@
           "end_year": "2024"
         },
         {
-          "job_title": "Free Lancer",
-          "employer": "Commisioned",
+          "job_title": "Freelancer",
+          "employer": "Commissioned",
           "task": ["Video Editing", "Photo Editing", "Graphic Design", "Microsoft Tools"],
           "start_month": "January",
           "start_year": "2023",
@@ -350,11 +350,11 @@
       "skills": [
         {
           "title": "Frontend Development",
-          "percentage": "100%"
+          "percentage": "95%"
         },
         {
           "title": "UI/UX Design",
-          "percentage": "100%"
+          "percentage": "95%"
         },
         {
           "title": "API Integration",
